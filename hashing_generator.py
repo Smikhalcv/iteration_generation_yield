@@ -3,7 +3,10 @@ import json
 
 
 def input_path():
-    path = input('Input path to file: ')
+    path = input('''Programm reads only .json and .txt files!
+If the file .json, you can get an encrypted dictionary in a object "dict".
+If the file .txt, you can get an encrypted dictionary in a object "hash_text".
+Input path to file: ''')
 
     if path.endswith('.json'):
         with open(path, encoding='utf-8') as file:
